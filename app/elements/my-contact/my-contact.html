@@ -1,11 +1,29 @@
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 <dom-module id="my-contact">
     <template>
-        <style>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">
             :host {
                 display: inline-block;
             }
+            .box{
+
+            }
+            paper-icon-button {
+                width: 60px;
+                height: 60px;
+            }
         </style>
-        <p>Este es el componente de mi contacto</p>
+            <div>
+               <div class="box horizontal layout">
+                    <paper-icon-button class="icon" icon="perm-phone-msg"></paper-icon-button>
+                    <p>Teléfono</p>
+               </div>
+               <div class="box horizontal layout">
+                    <paper-icon-button class="icon" icon="mail"></paper-icon-button>
+                    <p>Correo Electrónico</p>
+               </div>
+            </div>  
     </template>
     <script>
         Polymer({
