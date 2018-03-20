@@ -33,8 +33,22 @@ a{
 }
 iron-pages{
   height: 100%;
+  width: 100%;
+}
+iron-pages[data-section="my-programs"]{
+  background-image: url('/images/touch/codigo.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+iron-pages[data-section="my-cv"]{
 
 }
+iron-pages[data-section="my-contact"]{
+  background-image: url('/images/touch/contacto.png');
+  background-position: center center;
+  background-size: cover;
+}
+
 
 
 

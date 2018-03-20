@@ -1,28 +1,70 @@
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../../bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/communication-icons.html">
 <dom-module id="my-contact">
     <template>
         <style is="custom-style" include="iron-flex iron-flex-alignment">
             :host {
-                display: inline-block;
-            }
-            .box{
-
+                display: inline-block;  
+                height: 100%;
+                width: 100%;  
             }
             paper-icon-button {
                 width: 60px;
                 height: 60px;
             }
+            iron-icon{
+                width: 55px;
+                height: 55px;
+            }
+            p{
+                color:white;
+                font-size: 20px;
+                text-decoration: bold;
+            }
+            .icon-locality{
+                color: rgb(100, 205, 240);
+            }
+            .icon-home{
+                color:yellow;
+            }
+            .icon-mail{
+                color:rgb(73, 138, 73);
+            }
+            .icon-phone{
+                color:pink;
+            }
+            .logotipo{
+                height: 35px;
+                width: 35px;
+            }
+            .logo:hover{
+                color: rgb(100, 205, 240);
+            }
         </style>
-            <div>
-               <div class="box horizontal layout">
-                    <paper-icon-button class="icon" icon="perm-phone-msg"></paper-icon-button>
+            <div class="grupal">
+                <div class="box horizontal layout center">
+                    <paper-icon-button class="icon-phone" icon="communication:call"></paper-icon-button>
                     <p>Teléfono</p>
-               </div>
-               <div class="box horizontal layout">
-                    <paper-icon-button class="icon" icon="mail"></paper-icon-button>
+                </div>
+                <div class="box horizontal layout center">
+                    <paper-icon-button class="icon-mail" icon="mail"></paper-icon-button>
                     <p>Correo Electrónico</p>
-               </div>
+                </div>
+                <div class="box horizontal layout center">
+                    <paper-icon-button class="icon-home" icon="home"></paper-icon-button>
+                    <p>Dirección</p>
+                </div>
+                <div class="box horizontal layout center">
+                    <paper-icon-button class="icon-locality" icon="maps:place"></paper-icon-button>
+                    <a target="_blank" href="https://www.google.es/maps/place/28400+Collado+Villalba,+Madrid/@40.6351648,-4.0238843,14z/data=!3m1!4b1!4m5!3m4!1s0xd4173f62e5056e5:0x1d531a9dadd12755!8m2!3d40.6308775!4d-4.0055605"><p class="logo">Localidad</p></a>
+                </div>
+                <div class="box horizontal layout center">
+                    <!-- pongo la imagen como un paper icon button para que tenga el mismo padding que los paper icon button de arriba -->
+                    <paper-icon-button src="../../images/touch/linke.png" alt="logotipo linkedin"></paper-icon-button>
+                    <p>Linkedin</p>
+                </div>
             </div>  
     </template>
     <script>
