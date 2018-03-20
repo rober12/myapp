@@ -36,7 +36,7 @@ iron-pages{
   width: 100%;
 }
 iron-pages[data-section="my-programs"]{
-  background-image: url('/images/touch/codigo.jpg');
+  background-image: url('/images/touch/codigoGris.jpg');
   background-position: center center;
   background-size: cover;
 }
